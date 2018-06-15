@@ -14,7 +14,7 @@ class Clientes extends Component {
     cliente: {
       nome: "",
       sobrenome: "",
-      canDelete: ""
+      canDelete: true
     }
   };
 
@@ -62,7 +62,7 @@ class Clientes extends Component {
           cliente: {
             nome: "",
             sobrenome: "",
-            canDelete: ""
+            canDelete: true
           }
         };
       },
@@ -104,7 +104,7 @@ class Clientes extends Component {
         <CheckboxField
           label="Pode apagar?:"
           id="canDelete"
-          value={cliente.canDelete}
+          checked={cliente.canDelete}
           onChange={this.onChangeCheckbox}
         />
 

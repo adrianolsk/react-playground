@@ -31,11 +31,12 @@ const FormField = ({ id, value, label, onChange }) => (
   </Field>
 );
 
-const CheckboxField = ({ id, value, label, onChange }) => (
+const CheckboxField = ({ id, value, label, onChange, checked }) => (
   <Field style={{ display: "inline" }}>
     <input
       id={id}
       type="checkbox"
+      checked={checked}
       value={value}
       onChange={event => onChange(event)}
     />
